@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const { User, Animal, TrainingLog } = require('./models'); // import models
-const authenticateJWT = require('./middleware/authenticateJWT'); // import jwt middleware
+const authenticateJWT = require('authenticateJWT'); // import jwt middleware
 
 const app = express();
 app.use(express.json()); // middleware to parse json bodies
